@@ -19,6 +19,7 @@ class Quiz extends StatelessWidget {
     return Column(
       children: [
         Question(
+          questionIndex,
           questions[questionIndex]['questionText'] as String,
         ),
         ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
